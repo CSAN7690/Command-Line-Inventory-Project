@@ -4,9 +4,9 @@
     "fs": "^0.0.1-security",
     "readline-sync": "^1.4.10"
   },
-  "name": "command-line-inventory-project",
+  "name": "funko-pops-inventory",
   "version": "1.0.0",
-  "description": "",
+  "description": "A command-line inventory application for Funko Pops",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
