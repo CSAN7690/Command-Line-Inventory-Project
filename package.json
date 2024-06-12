@@ -3,5 +3,16 @@
     "chalk": "^5.3.0",
     "fs": "^0.0.1-security",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "name": "command-line-inventory-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
