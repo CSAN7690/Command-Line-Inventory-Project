@@ -15,7 +15,7 @@
 ```node index.js list```
 
 ### 🔎 View details of an item
-````node index.js view [id]```
+```node index.js view [id]```
 
 ### 🗑️ Delete an item 
 ```node index.js delete [id]```
