@@ -10,9 +10,17 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "add": "node index.js add",
+    "list": "node index.js list",
+    "view": "node index.js view",
+    "delete": "node index.js delete",
+    "update": "node index.js update",
+    "cart:add": "node index.js cart add",
+    "cart:view": "node index.js cart view",
+    "cart:cancel": "node index.js cart cancel"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Sanchez",
   "license": "ISC"
 }
