@@ -115,40 +115,63 @@ function cancelCart() {
     console.log(chalk.green('Cart emptied successfully!'));
 }
 
-// Command-line interface
-const command = process.argv[2];
-const arg = parseInt(process.argv[3], 10);
+// Main menu
+function mainMenu() {
+    while (true) {
+        console.log(chalk.green('\nWelcome to the Funko Pops Inventory System!'));
+        console.log('1. Create new item');
+        console.log('2. List items');
+        console.log('3. See details of one item');
+        console.log('4. Delete item');
+        console.log('5. Update item');
+        console.log('6. Add items to cart');
+        console.log('7. View cart');
+        console.log('8. Empty cart');
+        console.log('9. Exit');
 
-switch (command) {
-    case 'add':
-        addItem();  // A user can create a new item
-        break;
-    case 'list':
-        listItems();  // A user can see a list of all the items
-        break;
-    case 'view':
-        viewItem(arg);  // A user can see the details of one item
-        break;
-    case 'delete':
-        deleteItem(arg);  // A user can delete an item
-        break;
-    case 'update':
-        updateItem(arg);  // A user can update an item
-        break;
-    case 'cart':
-        const cartCommand = process.argv[3];
-        const cartArg = parseInt(process.argv[4], 10);
-        if (cartCommand === 'add') {
-            addToCart(cartArg);  // Add items to the shopping cart
-        } else if (cartCommand === 'view') {
-            viewCart();  // See the total price and total number of each item in the cart
-        } else if (cartCommand === 'cancel') {
-            cancelCart();  // Empty the shopping cart
+        const choice = readline.question('Please select an option: ');
+
+        switch (choice) {
+            case '1':
+                addItem();
+                break;
+            case '2':
+                listItems();
+                break;
+            case '3':
+                const viewId = readline.questionInt('Enter the ID of the item to view: ');
+                viewItem(viewId);
+                break;
+            case '4':
+                const deleteId = readline.questionInt('Enter the ID of the item to delete: ');
+                deleteItem(deleteId);
+                break;
+            case '5':
+                const updateId = readline.questionInt('Enter the ID of the item to update: ');
+                updateItem(updateId);
+                break;
+            case '6':
+                const addToCartId = readline.questionInt('Enter the ID of the item to add to cart: ');
+                addToCart(addToCartId);
+                break;
+            case '7':
+                viewCart();
+                break;
+            case '8':
+                cancelCart();
+                break;
+            case '9':
+                console.log(chalk.blue('Goodbye!'));
+                process.exit(0);
+                break;
+            default:
+                console.log(chalk.red('Invalid option, please try again.'));
         }
-        break;
-    default:
-        console.log(chalk.red('Invalid command'));
+    }
 }
+
+// Start the application
+mainMenu();
 
 // Export functions for testing
 export {
