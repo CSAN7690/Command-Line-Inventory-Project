@@ -1,26 +1,25 @@
 {
-  "dependencies": {
-    "chalk": "^5.3.0",
-    "fs": "^0.0.1-security",
-    "readline-sync": "^1.4.10"
-  },
   "name": "funko-pops-inventory",
   "version": "1.0.0",
   "description": "A command-line inventory application for Funko Pops",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "index.mjs",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "add": "node index.js add",
-    "list": "node index.js list",
-    "view": "node index.js view",
-    "delete": "node index.js delete",
-    "update": "node index.js update",
-    "cart:add": "node index.js cart add",
-    "cart:view": "node index.js cart view",
-    "cart:cancel": "node index.js cart cancel"
+    "start": "node index.mjs",
+    "add": "node index.mjs add",
+    "list": "node index.mjs list",
+    "view": "node index.mjs view",
+    "delete": "node index.mjs delete",
+    "update": "node index.mjs update",
+    "cart:add": "node index.mjs cart add",
+    "cart:view": "node index.mjs cart view",
+    "cart:cancel": "node index.mjs cart cancel"
   },
   "keywords": [],
   "author": "Chris Sanchez",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "readline-sync": "^1.4.10"
+  }
 }

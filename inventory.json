@@ -1,23 +1,44 @@
 [
-    {
-        "id": 1,
-        "name": "Batman",
-        "priceInCents": 1500,
-        "inStock": true,
-        "series": "DC Comics"
-    },
-    {
-        "id": 2,
-        "name": "Iron Man",
-        "priceInCents": 2000,
-        "inStock": true,
-        "series": "Marvel"
-    },
-    {
-        "id": 3,
-        "name": "Harry Potter",
-        "priceInCents": 1800,
-        "inStock": false,
-        "series": "Harry Potter"
-    }
+  {
+    "id": 1,
+    "name": "Batman",
+    "priceInCents": 1500,
+    "inStock": true,
+    "series": "DC Comics"
+  },
+  {
+    "id": 2,
+    "name": "Iron Man",
+    "priceInCents": 2000,
+    "inStock": true,
+    "series": "Marvel"
+  },
+  {
+    "id": 3,
+    "name": "Harry Potter",
+    "priceInCents": 1800,
+    "inStock": false,
+    "series": "Harry Potter"
+  },
+  {
+    "id": 4,
+    "name": "Wall-E",
+    "priceInCents": 1500,
+    "inStock": false,
+    "series": "Disney Pixar"
+  },
+  {
+    "id": 5,
+    "name": "Dwight Schrute",
+    "priceInCents": 2000,
+    "inStock": false,
+    "series": "The Office"
+  },
+  {
+    "id": 6,
+    "name": "Darth Vader",
+    "priceInCents": 4500,
+    "inStock": true,
+    "series": "Star Wars"
+  }
 ]
